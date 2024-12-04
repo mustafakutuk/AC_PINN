@@ -21,11 +21,6 @@ class PhysicsInformedNN:
         X_lb = np.concatenate((0 * tb + lb[0], tb), 1)  # (lb[0], tb)
         X_ub = np.concatenate((0 * tb + ub[0], tb), 1)  # (ub[0], tb)
 
-        self.sess = None
-        self.saver = None
-        self.train_state = TrainState()
-        self.losshistory = LossHistory()
-
         self.lb = lb
         self.ub = ub
 
