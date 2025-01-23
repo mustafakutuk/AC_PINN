@@ -167,7 +167,7 @@ class PhysicsInformedNN:
         u_xx = tf.gradients(u_x, x)[0]
 
         f_u = u_t - 0.0001 * u_xx + 5 * (u ** 3 - u)
-        energy = (1 / self.x_f.shape[0]) * (np.sum(5 * (10 ** (-5)) * (np.abs(u_x) ** 2)) + (
+        energy = (1 / self.x_energy.shape[0]) * (np.sum(5 * (10 ** (-5)) * (np.abs(u_x) ** 2)) + (
             np.sum(1.25 * (1 - u ** 2) ** 2)))
 
         energy_t = tf.gradients(energy, t)[0]
