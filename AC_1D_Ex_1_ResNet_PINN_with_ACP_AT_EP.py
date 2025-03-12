@@ -357,7 +357,7 @@ if __name__ == "__main__":
 
         data = scipy.io.loadmat('/Data/AC.mat')
 
-        t = data['tt'].flatten()[:, None]
+        t = data['tt' + str(i+1)].flatten()[:, None]
         x = data['x'].flatten()[:, None]
 
         X, T = np.meshgrid(x, t)
