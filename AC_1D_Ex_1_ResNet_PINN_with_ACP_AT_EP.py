@@ -355,10 +355,10 @@ if __name__ == "__main__":
         N_f = 500
         layers = [2, 100, 100, 100, 100, 1]
 
-        t = np.linspace(0.1 *i, 0.1*(i+1), 21)
-        x = np.linspace(-1, 1, 512)
-        t = t.flatten()[:, None]
-        x = x.flatten()[:, None]
+        data = scipy.io.loadmat('/Data/AC.mat')
+
+        t = data['tt'].flatten()[:, None]
+        x = data['x'].flatten()[:, None]
 
         X, T = np.meshgrid(x, t)
 
