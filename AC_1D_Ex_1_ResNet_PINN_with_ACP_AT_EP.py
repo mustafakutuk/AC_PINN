@@ -355,7 +355,7 @@ if __name__ == "__main__":
         N_f = 500
         layers = [2, 100, 100, 100, 100, 1]
 
-        data = scipy.io.loadmat('/Data/AC.mat')
+        data = scipy.io.loadmat('/Data/AC_1D.mat')
 
         t = data['tt' + str(i+1)].flatten()[:, None]
         x = data['x'].flatten()[:, None]
