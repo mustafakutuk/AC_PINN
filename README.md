@@ -1,5 +1,5 @@
 # AC_PINN
 The Physics-Informed Neural Network applications to solve different types of Allen-Cahn equations 
 
-The article is given in [arXiv:2411.08760](https://arxiv.org/pdf/2411.08760).
+The article is given at https://doi.org/10.1016/j.jocs.2025.102577
 
